@@ -1,0 +1,29 @@
+algoritmo "boasvindas"
+var
+   nome,conf:caractere
+inicio
+
+   repita
+      limpatela
+
+      escreval("------------------")
+      escreval(" Qual o seu nome? ")
+      escreval("------------------")
+      leia(nome)
+
+      escreval(" ")
+
+      escreval(" Ola ",nome,", é um prazer conhecer você! ")
+      
+      escreval(" ")
+
+      escreva("Quer dar boas vindas a outra pessoa? [S/N] ")
+      leia(conf)
+
+      se(conf = "n") ou (conf = "N") entao
+         conf <- "N"
+      fimse
+
+   ate (conf = "N")
+
+fimalgoritmo

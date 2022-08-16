@@ -1,0 +1,21 @@
+algoritmo "cambiodolar"
+var
+   rs:real
+   opc:caractere
+inicio
+   repita
+      limpatela
+      escreval("------------------------------------------")
+      escreval("Vamos calcular quantos US$ da pra comprar!")
+      escreval("     Taxa de cambio: US$1.00 = R$3.45     ")
+      escreval("------------------------------------------")
+      escreva("Quantos reais voce tem? R$")
+      leia(rs)
+
+      escreval("Com R$",rs," e possivel comprar US$",(rs/3.45):2:2,"!")
+
+      escreva("Quer calcular outro valor? [S/N] ")
+      leia(opc)
+   ate(opc = "N")
+
+fimalgoritmo

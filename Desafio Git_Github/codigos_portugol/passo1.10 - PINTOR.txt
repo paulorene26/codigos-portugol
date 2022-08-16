@@ -1,0 +1,22 @@
+algoritmo "Pintor"
+var
+   alt,lar:real
+   opc:caractere
+inicio
+   repita
+   
+      limpatela
+      escreval("Vamos calcular quanta tinta vamos usar!")
+      escreva("Informe a altura da parede: ")
+      leia(alt)
+      escreva("Informe a largura da parede: ")
+      leia(lar)
+
+      escreval("A parede tem ",(alt*lar):2:1," metros quadrados.")
+      escreval("Serao necessarios ",(alt*lar/2):2:1," litros de tinta")
+
+      escreva("Quer fazer outro calculo? [S/N] ")
+      leia(opc)
+
+   ate(opc = "N")
+fimalgoritmo

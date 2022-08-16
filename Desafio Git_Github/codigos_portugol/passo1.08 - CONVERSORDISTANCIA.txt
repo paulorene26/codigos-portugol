@@ -1,0 +1,46 @@
+algoritmo "conversordistancia"
+var
+   op1:inteiro
+   m:real
+   opc:caractere
+inicio
+   repita
+      limpatela
+      escreval("Vamos mudar uma medida de metros para outra escala!")
+      escreva("Informe um valor em metros: ")
+      leia(m)
+
+      escreval("Digite [1] para [km]")
+      escreval("Digite [2] para [hm]")
+      escreval("Digite [3] para [dam]")
+      escreval("Digite [4] para [dm]")
+      escreval("Digite [5] para [cm]")
+      escreval("Digite [6] para [mm]")
+      leia(op1)
+
+      escolha op1
+
+      caso 1
+         escreva(m,"m e igual a ",(m/1000):2:2,"km")
+
+      caso 2
+         escreva(m,"m e igual a ",(m/100):2:2,"hm")
+
+      caso 3
+         escreva(m,"m e igual a ",(m/10):2:2,"dam")
+
+      caso 4
+         escreva(m,"m e igual a ",(m*10):2:2,"dm")
+
+      caso 5
+         escreva(m,"m e igual a ",(m*100):2:2,"cm")
+
+      caso 6
+         escreva(m,"m e igual a ",(m*1000):2:2,"mm")
+
+      fimescolha
+
+      escreva("Quer converter outra medida? [S/N]")
+      leia(opc)
+   ate (opc = "N")
+fimalgoritmo

@@ -1,0 +1,47 @@
+algoritmo "calculadora"
+var
+   op1:inteiro
+   n1,n2:real
+   op:caractere
+inicio
+   repita
+      limpatela
+
+      escreval("---------------------------")
+      escreval(" Vamos fazer uma operacao! ")
+      escreval("---------------------------")
+
+      escreva("Digite o 1º numero: ")
+      leia(n1)
+
+      escreva("Digite o 2º numero: ")
+      leia(n2)
+
+      escreval("Qual operacao voce quer fazer?")
+      escreval("Digite [1] para [+]")
+      escreval("Digite [2] para [-]")
+      escreval("Digite [3] para [*]")
+      escreval("Digite [4] para [/]")
+      leia(op1)
+
+      escolha op1
+
+         caso 1
+         escreval(n1," +",n2," =",n1+n2)
+
+         caso 2
+         escreval(n1," -",n2," =",n1-n2)
+
+         caso 3
+         escreval(n1," *",n2," =",n1*n2)
+
+         caso 4
+         escreval(n1," /",n2," =",n1/n2)
+
+      fimescolha
+
+      escreva("Quer fazer outra operacao? [S/N] ")
+      leia(op)
+
+   ate (op = "N")
+fimalgoritmo

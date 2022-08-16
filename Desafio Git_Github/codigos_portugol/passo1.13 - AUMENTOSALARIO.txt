@@ -1,0 +1,21 @@
+algoritmo "aumentosalario"
+var
+   opc:caractere
+   sal:real
+inicio
+
+   repita
+
+      limpatela
+      escreval("Calculo do novo salario!")
+      escreval("O aumento atual e de 15 por cento!")
+      escreva("Informe seu salario atual: R$")
+      leia(sal)
+
+      escreval("Seu novo salario e R$",(sal+(sal*15/100)),"!")
+      escreva("Quer fazer outro calculo? [S/N] ")
+      leia(opc)
+
+   ate(opc = "N")
+
+fimalgoritmo

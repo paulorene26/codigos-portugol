@@ -1,0 +1,27 @@
+algoritmo "delta"
+var
+   a,b,c:inteiro
+   opc:caractere
+inicio
+   repita
+
+      limpatela
+      escreval("Calculo do [delta] para uma equacao do segundo grau!")
+      escreval("                 Ax^2 + Bx + C = 0                  ")
+
+      escreva("Inorme do valor de [A] : ")
+      leia(a)
+
+      escreva("Inorme do valor de [B] : ")
+      leia(b)
+
+      escreva("Inorme do valor de [C] : ")
+      leia(c)
+
+      escreval("O valor de [delta] e igual a",(-b + 4*a*c))
+
+      escreva("Quer calcular novamente? [S/N] ")
+      leia(opc)
+
+   ate (opc = "N")
+fimalgoritmo

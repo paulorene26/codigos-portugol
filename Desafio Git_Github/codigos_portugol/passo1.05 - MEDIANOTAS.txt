@@ -1,0 +1,27 @@
+algoritmo "medianotas"
+var
+   c,ano:inteiro
+   notas,media:real
+   opc:caractere
+inicio
+   repita
+      limpatela
+      escreval("Vamos calcular a media do aluno!")
+      escreva("Quantas notas o estudante teve? ")
+      leia(ano)
+
+      para c <- 1 ate ano faca
+
+         escreva("Informe a",c,"º nota:" )
+         leia(notas)
+
+         media <- media + notas
+
+      fimpara
+
+      escreval("A média das notas e ",(media / ano):3:2)
+      escreval("Quer calcular outra média? [S/N] ")
+      leia(opc)
+   ate (opc = "N")
+
+fimalgoritmo

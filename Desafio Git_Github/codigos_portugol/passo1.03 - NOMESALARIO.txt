@@ -1,0 +1,33 @@
+algoritmo "nomesalario"
+var
+   conf,nome:caractere
+   sal:real
+inicio
+
+   repita
+
+      limpatela
+
+      escreval("Qual o nome do funcionario?")
+      leia(nome)
+
+      escreval(" ")
+
+      escreva("Qual o salario de ",nome,"? R$")
+      leia(sal)
+
+      escreval(" ")
+
+      escreval("O salario de ",nome," no mes atual e de R$",sal:6:2)
+
+      escreval(" ")
+
+      escreva("Quer adicionar outro funcionario? [S/N]")
+      leia(conf)
+
+      se ((conf = "n") ou (conf = "N")) entao
+         conf <- "N"
+      fimse
+
+   ate (conf = "N")
+fimalgoritmo

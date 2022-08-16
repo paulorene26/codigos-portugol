@@ -1,0 +1,27 @@
+algoritmo "locacarro"
+var
+   dia:inteiro
+   dist:real
+   opc:caractere
+inicio
+
+   repita
+
+      limpatela
+      escreval("--------------------------")
+      escreval(" Calculo aluguel do carro ")
+      escreval("--------------------------")
+
+      escreva("Dias alugados: ")
+      leia(dia)
+
+      escreva("Distancia percorrida(km): ")
+      leia(dist)
+
+      escreval("O valor total do aluguel e de R$",((90*dia)+(0.20*dist)))
+      escreva("Quer fazer outro calculo? [S/N] ")
+      leia(opc)
+
+   ate(opc = "N")
+
+fimalgoritmo

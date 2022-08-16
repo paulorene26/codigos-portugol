@@ -1,0 +1,20 @@
+algoritmo "dobroeterco"
+var
+   num:real
+   opc:caractere
+inicio
+   repita
+
+      limpatela
+      escreval("Vamos calcular o dobro e a terca parte de um numero!")
+      escreva("Informe um numero real qualquer: ")
+      leia(num)
+
+      escreval("O dobro de",num,"e igual a",(num*2),"!")
+      escreval("A terca parte de",num,"e igual a ",(num/3):2:2,"!")
+
+      escreva("Quer calcular para outro numero? [S/N] ")
+      leia(opc)
+
+   ate(opc = "N")
+fimalgoritmo

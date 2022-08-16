@@ -1,0 +1,21 @@
+algoritmo "desconto"
+var
+   val,desc:real
+   opc:caractere
+inicio
+   repita
+
+      limpatela
+      escreval("Aplicacao de desconto")
+      escreva("Qual o valor da compra? R$")
+      leia(val)
+
+      escreva("Qual a porcentagem do desconto? ")
+      leia(desc)
+
+      escreval("O valor da compra com desconto e",val-(val*desc/100))
+      escreva("Quer fazer outro calculo? [S/N] ")
+      leia(opc)
+
+   ate (opc = "N")
+fimalgoritmo

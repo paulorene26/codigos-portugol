@@ -1,0 +1,31 @@
+algoritmo "calcsalario"
+var
+   dias,c:inteiro
+   h,toth:real
+   opc:caractere
+inicio
+   repita
+
+      limpatela
+      escreval("-------------------")
+      escreval("Calculo de salario!")
+      escreval("      R$25 / h     ")
+      escreval("-------------------")
+      escreva("Quantos dias voce trabalhou neste mes? ")
+      leia(dias)
+
+      para c <- 1 ate dias faca
+
+         escreva("Horas trabalhadas no",c,"º dia: ")
+         leia(h)
+
+         toth <- toth + h
+
+      fimpara
+
+      escreval("O seu salario e R$",(toth*25))
+      escreva("Quer fazer outro calculo? [S/N] ")
+      leia(opc)
+
+   ate(opc="N")
+fimalgoritmo

@@ -1,0 +1,8 @@
+algoritmo "olamundo"
+var
+
+inicio
+   escreval("-------------")
+   escreval(" Olá, Mundo! ")
+   escreval("-------------")
+fimalgoritmo

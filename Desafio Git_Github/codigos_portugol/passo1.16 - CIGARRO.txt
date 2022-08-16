@@ -1,0 +1,32 @@
+algoritmo "cigarro"
+var
+   q,opc:caractere
+   ano,dia:inteiro
+inicio
+
+   repita
+   
+      limpatela
+      escreva("Voce fuma? [S/N] ")
+      leia(q)
+
+      se ((q = "n") ou (q = "N")) entao
+         escreval("Parabens! Sua saude agradece.")
+      senao
+
+         escreva("Quantos cigarros voce fuma por dia? ")
+         leia(dia)
+         escreva("E ha quantos anos voce fuma? ")
+         leia(ano)
+         ano<-ano*365
+
+         escreval("Um fumante perde 10min de vida por cada cigarro fumado.")
+         escreval("Voce perdeu ",(10*dia*ano/1440):2:1," dias da sua vida.")
+
+      fimse
+      escreva("Quer perguntar novamente? [S/N] ")
+      leia(opc)
+
+   ate(opc="N")
+
+fimalgoritmo
